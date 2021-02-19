@@ -1,0 +1,96 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('../cards/pattern.png');
+    background-color: green;
+}
+#game-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+/* HEADER */
+header {
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 120px;
+}
+header h1 {
+    margin: 0px auto;
+    color: rgb(211, 207, 207);
+    text-align: center;
+    line-height: 120px;
+    letter-spacing: 4px;
+    text-shadow: 0px 0px 2px gold;
+    font-size: 70px;
+}
+/* GAME BUTTONS */
+#buttons-container {
+    width: 100%;
+    margin-top: 60px;
+}
+#buttons {
+    width: 100%;
+    text-align: center;
+}
+#buttons button {
+    margin-right: 5px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(23, 36, 226);
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px black;
+    transition: 200ms;
+    outline: none;
+}
+#buttons #first-button {
+    background-color: rgb(160, 16, 16);
+}
+#buttons button:hover {
+    background-color: rgb(14, 22, 133);
+    box-shadow: 0px 0px 8px black;
+}
+#buttons #first-button:hover {
+    background-color: rgb(110, 12, 12);
+}
+#buttons button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+#buttons button:disabled:hover {
+    background-color: rgb(23, 36, 226);
+    box-shadow: 0px 0px 4px black;
+}
+/* PLAYER AND COMPUTER'S BOX STYLES */
+#player-box {
+    height: 300px;
+}
+#computer-box {
+    height: 355px;
+}
+#player-box h2,
+#computer-box h2 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 1px 1px black, 1px 2px 1px black, 2px 3px 1px black;
+} 
+#player-box span,
+#computer-box span {
+    font-size: 35px;
+}
+/* CARDS STYLES */
+.cards {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}

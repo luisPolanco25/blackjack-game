@@ -1,0 +1,44 @@
+@media (max-width: 640px) {
+    #buttons-container {
+        margin-top: 30px;
+}
+}
+@media (max-width: 525px) {
+    .cards {
+        width: 120px;
+    }
+    #player-box h2,
+    #computer-box h2 {
+        font-size: 36px;
+    }
+    #player-box span,
+    #computer-box span {
+        font-size: 28px;
+    }
+    #player-box {
+        height: 250px;
+    }
+    #computer-box {
+        height: 275px;
+    }
+}
+@media (max-width: 345px) {
+    .cards {
+        width: 110px;
+    }
+    #player-box h2,
+    #computer-box h2 {
+        font-size: 32px;
+    }
+    #player-box span,
+    #computer-box span {
+        font-size: 24px;
+    }
+    header {
+        height: 100px;
+    }
+    header h1 {
+        font-size: 50px;
+        line-height: 100px;
+    }
+}

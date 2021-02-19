@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/media.css" type="text/css">
+    <title>Blackjack Game</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Blackjack</h1>
+    </header>
+    <!-- End of Header -->
+    <!-- Game -->
+    <div id="game-container">
+        <!-- These are the buttons that control the whole game -->
+        <div id="buttons-container">
+            <div id="buttons">
+                <button id="first-button">New game</button>
+                <button id="second-button" disabled="disabled">Take a card</button>
+                <button id="third-button" disabled="disabled">Stop</button>
+            </div>
+        </div>
+        <!-- End of the button's div -->
+        <!-- This is the area where the player will see his cards -->
+        <div id="player-box">
+            <h2>Player 1 - <span>0</span></h2>
+            <div id="player-cards" class="cards-box">
+                <!-- Here it will be some cards generated through JS -->
+            </div>
+        </div>
+        <!-- End of that area -->
+        <!-- This is the area where the player can see the computer's cards -->
+        <div id="computer-box">
+            <h2>Computer - <span>0</span></h2>
+            <div id="computer-cards" class="cards-box">
+                <!-- Here it will be some cards generated through JS -->
+            </div>
+        </div>
+        <!-- End of that area -->
+    </div>
+    <!-- End of the Game -->
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/game-min.js"></script>
+    <script>
+        document.getElementById('first-button').addEventListener('click', () => {
+            myGame.newGame();
+        });
+    </script>
+</body>
+
+</html>
